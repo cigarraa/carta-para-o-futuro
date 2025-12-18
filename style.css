@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat",sans-serif;
+    background: radial-gradient(circle at top, #1e1e2f, #0b0b12);
+    color: #f1f1f1;
+    height: 100vh;
+}
+
+.hero {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+
+.hero h1{
+    font-size: 64px;
+    font-weight: 800px;
+    line-height: 1.1;
+    margin-bottom: 30px 
+}
+
+.manifesto{
+     max-width: 700px;
+     font-size: 20px;
+     line-height: 1.6;
+     margin-bottom: 40px;
+}
+
+.manifesto::first-letter{
+    font-size: 64px;
+    font-weight: 800;
+    color: #bb86fc
+}
+
+.manifesto::first-line {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #bb86fc;
+}
+
+button {
+    width: fit-content;
+    padding: 15px  30px;
+    background: linear-gradient(135deg, #bb86fc, #7b2cbf);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+dialog {
+    background: #111;
+    border: none;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 600px;
+    color: white;
+}
+
+dialog::backdrop{
+    background: rgba(0,0,0, 0.85);
+}
